@@ -1,0 +1,7 @@
+.jumbotron{
+    background-image: url("../../../img/Cabezera2.jpg");
+    background-size: 100% 100%;
+    color: #fff;
+    height: 400px;
+    margin-bottom: -1em;
+}

@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 contenedorPerfil">
+
+      <div class="row">
+        <div class="col-md-5 contenedorPerfil">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{imgenGuadada}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{datosEstudiante.nombres}} {{datosEstudiante.apellidos}}</h5>
+              <p class="card-text">{{datosEstudiante.posicion}}</p>
+              <input type="file" name="agragaImg" id="agregaImg" (change)="ingresaImg($event)">
+              <a class="btn btn-primary" (click)="uploderImg()" >Guardar Imagen</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-7 contenedorPerfil">
+
+          <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      INFORMACION GENERAL
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <label for="">Usuario:--------------------------------------| </label>      <label class="labelDatos" for="">{{datosEstudiante.usuario}}</label><br>
+                        <label for="">Nombres:------------------------------------| </label>      <label class="labelDatos" for="">{{datosEstudiante.nombres}}</label><br>
+                        <label for="">Apellidos:------------------------------------| </label>      <label class="labelDatos" for="">{{datosEstudiante.apellidos}}</label><br>
+                        <label for="">Ocupacion:----------------------------------| </label>      <label class="labelDatos" for="">{{datosEstudiante.posicion}}</label><br>
+                        <label for="">cedula:---------------------------------------| </label>      <label class="labelDatos" for="">{{datosEstudiante.cedula}}</label><br>
+                        <label for="">Sexo:-----------------------------------------| </label>      <label class="labelDatos" for="">{{datosEstudiante.sexo}}</label><br>
+                        <label for="">Edad:-----------------------------------------| </label>      <label class="labelDatos" for="">{{datosEstudiante.edad}}</label><br>
+                        <footer class="blockquote-footer">El Conocimiento es el Fruto de nuestra mente.. <cite title="Source Title">El Negro.</cite></footer>
+                      </blockquote>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      CRONOGRAMA
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <img src="../../../img/Horario.png" class="img-fluid" alt="Horario">
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      NOTAS DE LAS MATERIAS
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 contenedorPerfil">
+  
+        <div class="row">
+          <div class="col-md-5 contenedorPerfil">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{{imgenGuadada}}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{datosAdmin.nombres}} {{datosAdmin.apellidos}}</h5>
+                <p class="card-text">{{datosAdmin.posicion}}</p>
+                <input type="file" name="agragaImgA" id="agregaImgA" (change)="ingresaImgA($event)">
+                <a class="btn btn-primary" (click)="uploderImgA()" >Guardar Imagen</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-7 contenedorPerfil">
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+</div> 
